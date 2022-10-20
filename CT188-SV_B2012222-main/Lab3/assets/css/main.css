@@ -1,0 +1,55 @@
+/* Animation */
+
+@keyframes animation1 {
+    from {
+        left: 80%;
+    }
+
+    to {
+        left: 30%;
+    }
+}
+
+@keyframes animation2 {
+    from {
+        left: 80%;
+    }
+
+    to {
+        left: 45%;
+    }
+}
+
+@keyframes animation3 {
+    from {
+        left: 80%;
+    }
+
+    to {
+        left: 63%;
+    }
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.btn {
+    background-color: #cddc39;
+    padding: 4px 10px;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #cddc39;
+    padding: 4px 10px;
+    color: #ed4190;
+}

@@ -1,0 +1,40 @@
+head{
+    grid-area: header-cell;
+    margin-bottom: 2px;
+    height: 100px;
+    padding: 0 5px;
+    background-image: url(images/header.png);
+}
+#header-img1{
+    height: 100px;
+    position: absolute;
+    top: -30px;
+    animation:img1 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes img1{
+    from{left: 80%;}
+    to{left:30%;}
+}
+#header-img2{
+    height: 100px;
+    position: absolute;
+    top: -30px;
+    animation:img2 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes img2{
+    from{left: 80%;}
+    to{left:45%;}
+}
+#header-img3{
+    height: 100px;
+    position: absolute;
+    top: -30px;
+    animation:img3 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes img3{
+    from{left: 80%;}
+    to{left:63%;}
+}

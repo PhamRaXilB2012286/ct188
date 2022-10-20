@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Đơn Hàng</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/images/logo.png" alt="logo" class="logo">
+        <img src="./assets/images/header-img1.png" alt="header-img1" class="header__img header__img--animation1">
+        <img src="./assets/images/header-img2.png" alt="header-img2" class="header__img header__img--animation2">
+        <img src="./assets/images/header-img3.png" alt="header-img3" class="header__img header__img--animation3">
+        <nav>
+            <div class="header__nav-left">
+                <a href="trangchu.html">Trang Chủ</a>
+                <a href="gioithieu.html">Giới Thiệu</a>
+                <a href="sanpham.html">Sản Phẩm</a>
+                <a href="tintuc.html">Tin Tức</a>
+                <a href="dangnhap.html">Đăng nhập</a>
+                <a href="dangky.html">Đăng Ký</a>
+                <a href="lienhe.html">Liên Hệ</a>
+            </div>
+            <div class="header__nav-right">
+                <form action="timkiem.html" name="header__nav-form" class="header__nav-form" method="get">
+                    <input class="header__nav-input" id="header__nav-input" type="text"
+                        placeholder="Nhập nội dung cần tìm...">
+                </form>
+                <button class="btn header__nav-icon" id="search-btn"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+                <button onclick="window.location.href='donhang.html'" class="btn header__nav-icon"><i
+                        class="fa-solid fa-cart-shopping"></i></i></button>
+            </div>
+
+
+        </nav>
+    </header>
+
+    <main class="main-order">
+        <article class="article-order">
+            <h1 class="section__heading--1">CHI TIẾT ĐƠN HÀNG</h1>
+            <table class="article__table-order">
+                <thead>
+                    <th>Hình SP</th>
+                    <th>Tên SP</th>
+                    <th>Số Lượng</th>
+                    <th>Gía</th>
+                    <th>Thành Tiền</th>
+                    <th></th>
+
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td class="text-center"><img src="./assets/images/sanpham/cantaloupe.jpg" alt="cantaloupe"></td>
+                        <td>Sữa chua vị dưa lưới</td>
+                        <td class="text-right">4</td>
+                        <td class="text-right">23 000đ</td>
+                        <td class="text-right">92 000đ</td>
+                        <td class="text-center"><a href="#"><span class="btn-danger"><i
+                                        class="fa-solid fa-trash"></i></span></a> </td>
+                    </tr>
+                    <tr>
+                        <td class="text-right" colspan="6">Tổng thành tiền (A) = 0đ</td>
+                    </tr>
+                    <tr>
+                        <td class="text-right" colspan="6">Chiết khấu (B) = 0.1 x A = 0đ</td>
+                    </tr>
+                    <tr>
+                        <td class="text-right" colspan="6">Thiếu (C) = 10% x (A - B) = 0đ</td>
+                    </tr>
+                    <tr>
+                        <td class="text-right" colspan="6">Tổng đơn hàng = A - B + C = 0đ</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" colspan="6"><button>Xác nhận đơn hàng</button></td>
+                    </tr> -->
+                </tbody>
+            </table>
+
+        </article>
+    </main>
+
+    <footer>
+        &copy; Bản quyền thuộc về FreezeVN.
+        <a href="#" class="footer__link"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="footer__link"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="footer__link"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="#" class="footer__link--img"><img src="./assets/images/top.png" alt="top" class="link__img"></a>
+    </footer>
+    <script src="./assets/js/index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+/* Animation */
+
+@keyframes animation1 {
+    from {
+        left: 80%;
+    }
+
+    to {
+        left: 30%;
+    }
+}
+
+@keyframes animation2 {
+    from {
+        left: 80%;
+    }
+
+    to {
+        left: 45%;
+    }
+}
+
+@keyframes animation3 {
+    from {
+        left: 80%;
+    }
+
+    to {
+        left: 63%;
+    }
+}
+
+.mt-100 {
+    margin-top: 100px;
+}

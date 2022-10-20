@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tin Tức</title>
+
+    <style>
+        body {
+            grid-template-areas:
+                'header header header'
+                'main main main'
+                'footer footer footer';
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .main {
+            grid-area: main;
+            grid-template-areas: 'aside article article article';
+            gap: 10px;
+        }
+
+        .article {
+            grid-area: article;
+        }
+
+        .aside {
+            grid-area: aside;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <img src="./assets/images/logo.png" alt="logo" class="logo">
+        <img src="./assets/images/header-img1.png" alt="header-img1" class="header__img header__img--animation1">
+        <img src="./assets/images/header-img2.png" alt="header-img2" class="header__img header__img--animation2">
+        <img src="./assets/images/header-img3.png" alt="header-img3" class="header__img header__img--animation3">
+        <nav>
+            <div class="header__nav-left">
+                <a href="trangchu.html">Trang Chủ</a>
+                <a href="gioithieu.html">Giới Thiệu</a>
+                <a href="sanpham.html">Sản Phẩm</a>
+                <a href="tintuc.html">Tin Tức</a>
+                <a href="dangnhap.html">Đăng nhập</a>
+                <a href="dangky.html">Đăng Ký</a>
+                <a href="lienhe.html">Liên Hệ</a>
+            </div>
+            <div class="header__nav-right">
+                <input class="header__nav-input" type="text" placeholder="Nhập nội dung cần tìm...">
+                <button class="header__nav-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="header__nav-icon"><i class="fa-solid fa-cart-shopping"></i></i></button>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="main">
+        <article class="article">
+            <h1 class="section__heading--1">TIN TỨC</h1>
+            <h2 class="section__heading--2">LỘ DIỆN SIÊU NĂNG LỰC TỪ TRÁI XOÀI!</h2>
+            <section class="section__news">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus non exercitationem vitae eaque
+                    eius! Iure ad provident iusto animi, accusamus, sit, eos asperiores quidem minima maiores aspernatur
+                    laboriosam facilis rem.<a href="#">Xem chi tiết</a></p>
+                <img src="./assets/images/tintuc/news1.jpg" alt="news1" class="section__news-img">
+            </section>
+            <h2 class="section__heading--2">SỮA CÁC LOẠI HẠT - MÓN NGON CHO HỆ MIỄN DỊCH KHỎE</h2>
+            <section class="section__news">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus non exercitationem vitae eaque
+                    eius! Iure ad provident iusto animi, accusamus, sit, eos asperiores quidem minima maiores aspernatur
+                    laboriosam facilis rem.<a href="#">Xem chi tiết</a></p>
+                <img src="./assets/images/tintuc/news2.jpg" alt="news2" class="section__news-img">
+            </section>
+            <h2 class="section__heading--2">SỮA CHUA KIWI - MÓN QUÀ SỨC KHỎE</h2>
+            <section class="section__news">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus non exercitationem vitae eaque
+                    eius! Iure ad provident iusto animi, accusamus, sit, eos asperiores quidem minima maiores aspernatur
+                    laboriosam facilis rem.<a href="#">Xem chi tiết</a></p>
+                <img src="./assets/images/tintuc/news3.jpg" alt="news2" class="section__news-img">
+            </section>
+            <h2 class="section__heading--2">RA MẮT APP SỮA CHUA Freeze TRÊN NỀN TẢNG IOS</h2>
+            <section class="section__news">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus non exercitationem vitae eaque
+                    eius! Iure ad provident iusto animi, accusamus, sit, eos asperiores quidem minima maiores aspernatur
+                    laboriosam facilis rem.<a href="#">Xem chi tiết</a></p>
+                <img src="./assets/images/tintuc/news4.jpg" alt="news2" class="section__news-img">
+            </section>
+            <h2 class="section__heading--2">ĐĂNG KÝ THÀNH VIÊN - NHẬN NGAY ƯU ĐÃI</h2>
+            <section class="section__news">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus non exercitationem vitae eaque
+                    eius! Iure ad provident iusto animi, accusamus, sit, eos asperiores quidem minima maiores aspernatur
+                    laboriosam facilis rem.<a href="#">Xem chi tiết</a></p>
+                <img src="./assets/images/tintuc/news5.jpg" alt="news2" class="section__news-img">
+            </section>
+            <h2 class="section__heading--2">TUYỂN GIÁM SÁT CHUỖI CỬA HÀNG</h2>
+            <section class="section__news">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus non exercitationem vitae eaque
+                    eius! Iure ad provident iusto animi, accusamus, sit, eos asperiores quidem minima maiores aspernatur
+                    laboriosam facilis rem.<a href="#">Xem chi tiết</a></p>
+                <img src="./assets/images/tintuc/news6.jpg" alt="news2" class="section__news-img">
+            </section>
+        </article>
+
+        <aside class="aside_news">
+            <h1 class="section__heading--1">ĐƯỢC QUAN TÂM</h1>
+            <img src="./assets/images/tintuc/hotnews.jpg" alt="hotnews" class="aside__img">
+            <h2 class="section__heading--2">KHAI TRƯƠNG HÂN HOAN - ƯU ĐÃI NGẬP TRÀN</h2>
+            <p>Khai trương hân hoan - ưu đãi ngập tràn Thêm một ngôi nhà mới của Sữa chua Freeze được khai trương <a
+                    href="#">Xem chi tiết</a></p>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        &copy; Bản quyền thuộc về FreezeVN.
+        <a href="#" class="footer__link"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="footer__link"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="footer__link"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="#" class="footer__link--img"><img src="./assets/images/top.png" alt="top" class="link__img"></a>
+    </footer>
+</body>
+
+</html>

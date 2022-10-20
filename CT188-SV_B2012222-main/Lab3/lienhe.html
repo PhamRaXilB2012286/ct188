@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Liên Hệ</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/images/logo.png" alt="logo" class="logo">
+        <img src="./assets/images/header-img1.png" alt="header-img1" class="header__img header__img--animation1">
+        <img src="./assets/images/header-img2.png" alt="header-img2" class="header__img header__img--animation2">
+        <img src="./assets/images/header-img3.png" alt="header-img3" class="header__img header__img--animation3">
+        <nav>
+            <div class="header__nav-left">
+                <a href="trangchu.html">Trang Chủ</a>
+                <a href="gioithieu.html">Giới Thiệu</a>
+                <a href="sanpham.html">Sản Phẩm</a>
+                <a href="tintuc.html">Tin Tức</a>
+                <a href="dangnhap.html">Đăng nhập</a>
+                <a href="dangky.html">Đăng Ký</a>
+                <a href="lienhe.html">Liên Hệ</a>
+            </div>
+            <div class="header__nav-right">
+                <form action="timkiem.html" name="header__nav-form" class="header__nav-form" method="get">
+                    <input class="header__nav-input" id="header__nav-input" type="text"
+                        placeholder="Nhập nội dung cần tìm...">
+                </form>
+                <button class="btn header__nav-icon" id="search-btn"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+                <button onclick="window.location.href='donhang.html'" class="btn header__nav-icon"><i
+                        class="fa-solid fa-cart-shopping"></i></i></button>
+            </div>
+
+
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1 class="section__heading--1">LIÊN HỆ</h1>
+            <section class="section__contact">
+                <span class="contact__icon"><i class="fa-solid fa-location-dot"></i></span>
+                <b>Địa chi: 0123, Tòa Nhà ABC, TP.Cần Thơ </b>
+                Nếu bạn có góp ý, vui lòng liên hệ bằng thư điện tử hoặc sử dụng biểu mẫu bên dưới. Xin cảm ơn.
+            </section>
+
+            <h1 class="section__heading--1">GÓP Ý</h1>
+            <section class="section__feedback">
+                <form action="" class="feedback__form" onsubmit="return frmContactValidate2(this);">
+                    <table class="feedback__table">
+                        <tr>
+                            <td> <label for="name">
+                                    <div class="form__icon"><i class="fa-solid fa-user"></i></div>
+                                </label></td>
+
+                            <td><input type="text" id="name" name="name" minlength="4"
+                                    placeholder="Vui lòng nhập Họ Tên của bạn" class="feedback__input" required></td>
+                        </tr>
+                        <tr>
+                            <td> <label for="email">
+                                    <div class="form__icon"><i class="fa-solid fa-envelope"></i></div>
+                                </label></td>
+
+                            <td> <input type="text" id="email" name="email"
+                                    pattern="^[azA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"
+                                    placeholder="Vui lòng nhập email của bạn" class="feedback__input" required></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="list">
+                                    <div class="form__icon"><i class="fa-solid fa-list"></i></div>
+                                </label></td>
+                            <td>
+                                <select name="list" id="list">
+                                    <option value="product">Về sản phẩm</option>
+                                    <option value="service">Dịch Vụ</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="table__td--vertical-align"> <label for="content">
+                                    <div class="form__icon"><i class="fa-solid fa-file"></i></div>
+                                </label></td>
+                            <td>
+                                <textarea placeholder="Nội dung cần liên hệ" minlength="10" name="content" id="content"
+                                    cols="30" rows="10" required></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="product__btn">Gửi</button>
+
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        &copy; Bản quyền thuộc về FreezeVN.
+        <a href="#" class="footer__link"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="footer__link"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="footer__link"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="#" class="footer__link--img"><img src="./assets/images/top.png" alt="top" class="link__img"></a>
+    </footer>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
